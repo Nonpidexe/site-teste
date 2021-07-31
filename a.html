@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>lol</title>
+</head>
+<body>
+<p id="nome" style="color: cornflowerblue;">Oi aethon, isso é apenas um teste.</p> <br>
+<p style="color: cornflowerblue;">O senhor gostaria de se relacionar com minha pessoa?</p> <br>
+<p style="color: rgb(106, 156, 30);">Se <strong>sim</strong>, por favor responda em meu privado da plataforma digital cujo se chama "Discord"</p> <br>
+<p style="color: red;">Se <strong>não</strong>, por favor me retire de seu circulo de amizades.</p>
+
+<!--Testes-->
+<img src="tenor.gif">
+
+<script>
+    const urlSearchParams = new URLSearchParams(window.location.search);
+    const params = Object.fromEntries(urlSearchParams.entries());
+    console.log(params)
+    const myP=document.getElementById("nome")
+    myP.innerText= `Oi ${params.nome}, isso é apenas um teste.`
+
+</script>
+</body>
+</html>
