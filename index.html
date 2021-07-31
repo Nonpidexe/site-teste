@@ -21,7 +21,8 @@
     const params = Object.fromEntries(urlSearchParams.entries());
     console.log(params)
     const myP=document.getElementById("nome")
-    myP.innerText= `Oi ${params.nome}, isso é apenas um teste.`
+    const nome=params.nome||"gatinho"
+    myP.innerText= `Oi ${nome}, isso é apenas um teste.`
 
 </script>
 </body>
